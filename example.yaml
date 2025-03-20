@@ -1,0 +1,5 @@
+# Misskeyのインスタンスのドメイン名とアクセストークンを指定します。
+# 投稿の公開範囲(public, home, followers, specified)を指定することができます。
+domain: example.com
+token: token
+visibility: public
