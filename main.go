@@ -14,6 +14,7 @@ type Config struct {
 	ServerURL  string `yaml:"domain"`
 	APIToken   string `yaml:"token"`
 	Visibility string `yaml:"visibility"`
+	Emoji      string `yaml:"emoji"`
 }
 
 func main() {
@@ -28,7 +29,7 @@ func main() {
 	postData := map[string]string{
 		"visibility": config.Visibility,
 		"i":          config.APIToken,
-		"text":       ":neko_neru_nya:ｲｯﾋ",
+		"text":       config.Emoji + "ｲｯﾋ",
 	}
 
 	// JSONに変換
